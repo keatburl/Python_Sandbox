@@ -148,7 +148,7 @@ elif z == "n":
     print("Okay, thanks for your order! It will be out shortly")      
 
 else:
-    print("Sorry that number was incorrect, please try again.")
+    print("Please enter y or n.")
 
 
 
