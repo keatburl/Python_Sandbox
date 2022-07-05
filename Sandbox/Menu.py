@@ -80,7 +80,7 @@ def order_more(order,items):
         x = input("Would you like anything else? Enter y or n: ")
 
         if x[0].lower()=="y":
-            more_items = input("What else would you like?: ")
+            more_items = input("What else would you like?: ").title()
             customer_order.add_item(more_items)
             customer_cart.append(customer_order.value)
         elif x[0].lower() =="n":
@@ -113,7 +113,7 @@ Customer(client)
 customer_order = Order()
 
 while True:
-    new_items = input("Hi {}! What would you like to order? Please enter one item at a time.: ".format(client))
+    new_items = input("Hi {}! What would you like to order? Please enter one item at a time.: ".format(client)).title()
     if new_items in menus:
         customer_cart = []
         customer_order.add_item(new_items)
